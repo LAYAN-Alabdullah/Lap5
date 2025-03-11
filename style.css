@@ -1,0 +1,145 @@
+/* إعدادات الشبكة العامة */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 25%;
+    grid-template-rows: auto 1fr 1fr 0.5fr;
+    gap: 0px;
+    align-content: start;
+}
+
+/* تنسيق العناصر داخل الـ Grid */
+.div-block, .div-block-2, .div-block-3, .div-block-4, .div-block-5, .div-block-6, .div-block-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div-block {
+    background-color: #f7f8f9;
+}
+
+.div-block-2 {
+    background-color: #f05638;
+    color: #fffbfb;
+}
+
+.div-block-3 {
+    background-color: #8f76bc;
+    color: #fff;
+}
+
+.div-block-4 {
+    background-color: #f7f8f9;
+}
+
+.div-block-5 {
+    background-color: #93b6b7;
+    background-image: url("https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42d5a5ed97dab707e7e_UX.png");
+    background-size: 80%;
+    color: #fff;
+}
+
+.div-block-6 {
+    background-color: #38d5f4;
+    color: #fff;
+}
+
+.div-block-7 {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.caps {
+    font-family: Montserrat, sans-serif;
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.caps.white {
+    color: #fff;
+}
+
+/* إعدادات الشبكة في الشاشات الصغيرة */
+@media (max-width: 991px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 25%;
+        grid-template-rows: auto 1fr 1fr 1fr auto auto auto auto;
+    }
+
+    .div-block {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .div-block-4 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .heading-3 {
+        font-size: 35px;
+        line-height: 1.4em;
+    }
+}
+
+/* إعدادات الشاشات الأصغر (جوال) */
+@media (max-width: 479px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+    }
+
+    .div-block-2 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .div-block-7 {
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .div-block-8 {
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .div-block-9 {
+        width: 90%;
+    }
+
+    .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heading-3 {
+        font-size: 10vw;
+    }
+
+    .div-block-10 {
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .image-2 {
+        left: -115%;
+        width: 200%;
+        margin-top: 40px;
+    }
+
+    .div-block-11, .div-block-12 {
+        width: 100%;
+    }
+
+    .heading-9 {
+        text-align: center;
+    }
+}
